@@ -366,7 +366,11 @@
 "Assets/Particlecollection_Free samples/Plugins/Effect/Script/EffectShaderPropertyStr.cs"
 "Assets/Particlecollection_Free samples/Plugins/Effect/Script/RenderEffect.cs"
 "Assets/Particlecollection_Free samples/Plugins/Effect/Script/TransformExtension.cs"
+"Assets/Script/DeliveryPointController.cs"
+"Assets/Script/EventManager.cs"
+"Assets/Script/GameManager.cs"
 "Assets/Script/PlayerController.cs"
+"Assets/Script/UIManager.cs"
 -langversion:9.0
 
 /deterministic
