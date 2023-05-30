@@ -191,7 +191,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7574725825018735783}
   - component: {fileID: 8088899519412151347}
-  - component: {fileID: 1846935383}
   - component: {fileID: 8631138808874954918}
   m_Layer: 0
   m_Name: New Car
@@ -234,25 +233,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1846935383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632161405121123607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8300f355014936c468adeb869f741bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontRight: {fileID: 4677688057052507208}
-  frontLeft: {fileID: 1188030307881840606}
-  BackRight: {fileID: 7562143286473672476}
-  BackLeft: {fileID: 3026363432078767327}
-  acceleration: 200
-  brakingForce: 300
-  maxTurnAngle: 25
 --- !u!114 &8631138808874954918
 MonoBehaviour:
   m_ObjectHideFlags: 0
