@@ -22,6 +22,8 @@ public class DeliveryPointController : MonoBehaviour
         deliveryPoint[nextLocationDelivery].SetActive(false);
 
         NextDeliveryPoint();
+
+        GameObject.Find("Canvas").GetComponent<UIManager>().ResetTimer();
     }
 
     public void NextDeliveryPoint()
@@ -29,5 +31,13 @@ public class DeliveryPointController : MonoBehaviour
         Debug.Log("ProximaLocalizacao");
         nextLocationDelivery = Random.Range(0, deliveryPoint.Length);
         deliveryPoint[nextLocationDelivery].SetActive(true);
+    }
+
+    public void StartGame()
+    {
+        nextLocationDelivery = Random.Range(0, deliveryPoint.Length);
+        deliveryPoint[nextLocationDelivery].SetActive(true);
+
+        GameObject.Find("Canvas").GetComponent<UIManager>().StartTimer();
     }
 }

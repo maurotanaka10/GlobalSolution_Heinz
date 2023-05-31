@@ -9,13 +9,51 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text pointText;
     [SerializeField] private GameManager gameManager;
 
+    [SerializeField] private TMP_Text timerText;
+    [SerializeField] private float timerToDelivery;
+    private bool timerIsRunning = false;
+    private float currentTime;
+    
+
     private void Awake()
     {
-        pointText.text = "" + gameManager.points;
+        ResetTimer();
     }
 
     private void FixedUpdate()
     {
         pointText.text = "" + gameManager.points;
+
+        if (timerIsRunning)
+        {
+            currentTime -= Time.deltaTime;
+
+            if (currentTime <= 0f)
+            {
+                currentTime = 0f;
+                StopTimer();
+            }
+
+            string seconds = Mathf.Floor(currentTime % 60).ToString("00");
+            string milliseconds = Mathf.Floor((currentTime * 1000) % 1000).ToString("000");
+            string timeText = seconds + ":" + milliseconds;
+            timerText.text = timeText;
+        }
+    }
+
+    public void StartTimer()
+    {
+        timerIsRunning = true;
+    }
+
+    public void StopTimer()
+    {
+        timerIsRunning = false;
+    }
+
+    public void ResetTimer()
+    {
+        currentTime = timerToDelivery;
+        timerText.text = timerToDelivery.ToString("0");
     }
 }

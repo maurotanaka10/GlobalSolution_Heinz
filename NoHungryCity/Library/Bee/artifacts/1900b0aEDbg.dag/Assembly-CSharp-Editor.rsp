@@ -375,11 +375,11 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
-"Assets/Particlecollection_Free samples/Plugins/Effect/Editor/EffectControllerInspector.cs"
-"Assets/Particlecollection_Free samples/Plugins/Effect/Editor/EffectToolBar.cs"
-"Assets/Particlecollection_Free samples/Plugins/Effect/Editor/RenderEffectInspector.cs"
-"Assets/Particlecollection_Free samples/Plugins/Effect/Editor/ShaderCustomEditor/ShaderMaterialsEditor.cs"
-"Assets/Particlecollection_Free samples/Plugins/Effect/Editor/XUIUtils.cs"
+"Assets/Props/Particlecollection_Free samples/Plugins/Effect/Editor/EffectControllerInspector.cs"
+"Assets/Props/Particlecollection_Free samples/Plugins/Effect/Editor/EffectToolBar.cs"
+"Assets/Props/Particlecollection_Free samples/Plugins/Effect/Editor/RenderEffectInspector.cs"
+"Assets/Props/Particlecollection_Free samples/Plugins/Effect/Editor/ShaderCustomEditor/ShaderMaterialsEditor.cs"
+"Assets/Props/Particlecollection_Free samples/Plugins/Effect/Editor/XUIUtils.cs"
 -langversion:9.0
 
 /deterministic
