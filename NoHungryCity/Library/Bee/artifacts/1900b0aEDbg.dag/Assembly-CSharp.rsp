@@ -368,6 +368,7 @@
 "Assets/Props/Particlecollection_Free samples/Plugins/Effect/Script/TransformExtension.cs"
 "Assets/Script/DeliveryPointController.cs"
 "Assets/Script/EventManager.cs"
+"Assets/Script/FoodBehavior.cs"
 "Assets/Script/GameManager.cs"
 "Assets/Script/PlayerController.cs"
 "Assets/Script/UIManager.cs"

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 11}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 309
+    x: 310
     y: 0
-    width: 393
+    width: 392
     height: 580
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 98
+  controlID: 23
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,10 +92,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 309
+    width: 310
     height: 580
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 97
+  controlID: 22
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,8 +172,8 @@ MonoBehaviour:
     y: 0
     width: 1218
     height: 495
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -207,7 +207,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 112
+  controlID: 93
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 96
+  controlID: 21
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -638,22 +638,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Props/POLYGON city pack/Prefabs-city/Floor
+    - Assets/Props/Caminhao
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Props/POLYGON city pack/Prefabs-city/Floor
+  - Assets/Props/Caminhao
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Git\Projetos\GlobalSolution_Heinz\NoHungryCity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2c8c0000
-    m_LastClickedID: 35884
-    m_ExpandedIDs: 00000000e0880000e2880000f288000060890000528b000000ca9a3b
+    m_SelectedIDs: a8970000
+    m_LastClickedID: 38824
+    m_ExpandedIDs: 00000000989700009a970000ae970000b897000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -681,7 +681,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e0880000e2880000
+    m_ExpandedIDs: 00000000989700009a9700009c970000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,7 +733,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 60}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 174
@@ -757,9 +757,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1527
+    x: 1528
     y: 73
-    width: 392
+    width: 391
     height: 559
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -800,7 +800,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1218
     y: 73
-    width: 307
+    width: 308
     height: 559
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -809,9 +809,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b819ffff6618ffff0817ffff0c17ffff0217ffff3215ffff3a15ffff2c15ffff3615ffff2615ffff3815ffffb813ffffbe13ffffc013ffffcc13ffffc613ffffce13ffff0012ffff0612ffff0812ffff0e12ffff1012ffff1612ffff4810ffff4e10ffff5010ffff5610ffff5810ffff5e10ffff500fffff560fffff580fffff5e0fffff600fffff660fffff440dffff4a0dffff4c0dffff520dffff540dffff5a0dffffac0bffffb20bffffb40bffffba0bffffbc0bffffc20bffff700affff760affff780affff7e0affff800affff860affff3409ffff3a09ffff3c09ffff4209ffff4409ffff4a09ffffa0f7feff8af2feffe8f0feffe2f0feffa4effeff9ceffeffa2effeff98effeffdceefeffdeeefeffe8eefeffe4eefeff68edfeff6aedfeff70edfeff72edfeff60ecfeff62ecfeff68ecfeff6aecfeff44ebfeff46ebfeff4cebfeff4eebfeff5ceafeff5eeafeff64eafeff66eafeff54e9feff56e9feff5ce9feff5ee9feff06adfdffacabfdffb6aafdffc885fdffea84fdff0084fdff1a83fdff6077fdff9676fdff8875fdffa251fdffb051fdff9451fdffae51fdff
-      m_LastClickedID: -175698
-      m_ExpandedIDs: c20bfdff5a1efdff7822fdff9c24fdff9a38fdffccb3fdff42e9fdff0420feffca28feffaa2cfeffe02ffeff5874feff9e7afeff6288feff009afeff9c9dfeff38b9feffacc3feff56dffeffc028ffff1630ffff283fffffa447ffff165cffff0a68fffff699ffffc0a0ffff94a9ffffc2afffff66b1ffff60d5ffff12fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5aecfdffb0ecfdff4a9ffeff1499ffff12fbfffff06c00002a870000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1082,9 +1082,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 67.87449, y: 20.187025, z: -52.499313}
+    m_Target: {x: 88.20518, y: -19.8148, z: 8.825201}
     speed: 2
-    m_Value: {x: 67.87449, y: 20.187025, z: -52.499313}
+    m_Value: {x: 88.20518, y: -19.8148, z: 8.825201}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1131,13 +1131,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.31585976, y: 0.5559734, z: -0.23487003, w: -0.7344096}
+    m_Target: {x: -0.07811066, y: -0.85341054, z: 0.50019485, w: -0.1372933}
     speed: 2
-    m_Value: {x: -0.31567627, y: 0.5539316, z: -0.23399906, w: -0.7339977}
+    m_Value: {x: -0.07722698, y: -0.8521447, z: 0.49944937, w: -0.13577867}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 13.835903
     speed: 2
-    m_Value: 12.124355
+    m_Value: 13.835903
   m_Ortho:
     m_Target: 0
     speed: 2

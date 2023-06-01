@@ -34,9 +34,9 @@ public class UIManager : MonoBehaviour
                 StopTimer();
             }
 
-            string seconds = Mathf.Floor(currentTime % 60).ToString("00");
-            string milliseconds = Mathf.Floor((currentTime * 1000) % 1000).ToString("000");
-            string timeText = seconds + ":" + milliseconds;
+            string minutes = ((int)currentTime/60).ToString("00") ;
+            string seconds = (currentTime % 60).ToString("00");
+            string timeText = minutes + ":" + seconds;
             timerText.text = timeText;
         }
     }

@@ -13,14 +13,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private WheelCollider BackRight;
     [SerializeField] private WheelCollider BackLeft;
 
-    public float acceleration = 500f;
-    public float brakingForce = 300f;
-    public float maxTurnAngle = 15f;
+    [SerializeField] private float acceleration = 500f;
+    [SerializeField] private float brakingForce = 300f;
+    [SerializeField] private float maxTurnAngle = 15f;
     private float currentAcceleration = 0f;
     private float currentBrakeForce = 0f;
     private float currentTurnAngle = 0f;
-
-    [Header("Movement Inputs")]
+    private float maxZAngle = 80;
+    
+    //InputS
     private Vector2 carMovementInput;
     private Vector3 carMovement;
     private bool isStopping;
@@ -65,8 +66,14 @@ public class PlayerController : MonoBehaviour
         frontLeft.steerAngle = currentTurnAngle;
         frontRight.steerAngle = currentTurnAngle;
 
-        if (isMoving)
-            Debug.Log("to andando");
+        float currentZAngle = Vector3.Angle(Vector3.up, transform.up);
+
+        if ((currentZAngle > maxZAngle) && currentAcceleration == 0)
+        {
+            Quaternion correctRotation = Quaternion.Euler(0, gameObject.transform.rotation.y, 0);
+
+            rigidBody.MoveRotation(correctRotation);
+        }
     }
 
     void OnMovementInput(InputAction.CallbackContext context)

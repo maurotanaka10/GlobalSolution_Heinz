@@ -7,6 +7,7 @@ public class DeliveryPointController : MonoBehaviour
     private GameManager gameManager;
 
     [SerializeField] private GameObject[] deliveryPoint;
+    [SerializeField] private GameObject restockedPoint;
 
     private int nextLocationDelivery;
 
@@ -17,13 +18,15 @@ public class DeliveryPointController : MonoBehaviour
 
     public void ConclusionDelivery()
     {
-        Debug.Log("concluiu entrega");
-        gameManager.points++;
-        deliveryPoint[nextLocationDelivery].SetActive(false);
+        if(GameObject.Find("Player").GetComponent<FoodBehavior>().noFood == false)
+        {
+            Debug.Log("concluiu entrega");
+            gameManager.points++;
+            deliveryPoint[nextLocationDelivery].SetActive(false);
 
-        NextDeliveryPoint();
-
-        GameObject.Find("Canvas").GetComponent<UIManager>().ResetTimer();
+            NextDeliveryPoint();
+            GameObject.Find("Player").GetComponent<FoodBehavior>().DeliveryFood();
+        }
     }
 
     public void NextDeliveryPoint()
@@ -39,5 +42,11 @@ public class DeliveryPointController : MonoBehaviour
         deliveryPoint[nextLocationDelivery].SetActive(true);
 
         GameObject.Find("Canvas").GetComponent<UIManager>().StartTimer();
+    }
+
+    public void RestockedFood()
+    {
+        GameObject.Find("Player").GetComponent<FoodBehavior>().Restocked();
+        restockedPoint.SetActive(false);
     }
 }
