@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private float timerToDelivery;
     private bool timerIsRunning = false;
     private float currentTime;
+
+    public bool gameIsOver;
     
 
     private void Awake()
@@ -39,6 +41,13 @@ public class UIManager : MonoBehaviour
             string seconds = (currentTime % 60).ToString("00");
             string timeText = minutes + ":" + seconds;
             timerText.text = timeText;
+        }
+
+        gameIsOver = currentTime <= 0 || GameObject.Find("Player").GetComponent<BatteryBehavior>().currentEnergy <= 0;
+
+        if (gameIsOver)
+        {
+            StopTimer();
         }
     }
 

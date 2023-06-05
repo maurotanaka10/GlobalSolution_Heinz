@@ -37,7 +37,7 @@ public class DeliveryPointController : MonoBehaviour
 
     }
 
-    public void ConclusionDelivery()
+      public void ConclusionDelivery()
     {
          if(GameObject.Find("Player").GetComponent<FoodBehavior>().noFood == false)
         {
@@ -73,6 +73,13 @@ public class DeliveryPointController : MonoBehaviour
     {
         nextLocationDelivery = Random.Range(0, deliveryPoint.Length);
         deliveryPoint[nextLocationDelivery].SetActive(true);
+
+        pointSpawnObject = deliveryPoint[nextLocationDelivery];
+        if (DrawPathCoroutine != null)
+        {
+            StopCoroutine(DrawPathCoroutine);
+        }
+        DrawPathCoroutine = StartCoroutine(DrawPathCollectable());
 
         GameObject.Find("Canvas").GetComponent<UIManager>().StartTimer();
     }

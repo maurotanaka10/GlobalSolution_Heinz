@@ -8,7 +8,7 @@ public class BatteryBehavior : MonoBehaviour
     [SerializeField] private Slider sliderBattery;
 
     [SerializeField] private int maxEnergy;
-    private int currentEnergy;
+    public int currentEnergy;
 
     void SetMaxBattery(int battery)
     {

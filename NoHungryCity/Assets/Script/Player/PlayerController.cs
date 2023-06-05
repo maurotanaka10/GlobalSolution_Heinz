@@ -43,6 +43,11 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         SetMovement();
+
+        if(GameObject.Find("Canvas").GetComponent<UIManager>().gameIsOver == true)
+        {
+            playerInputSystem.Player.Movement.Disable();
+        }
     }
 
     void SetMovement() 
