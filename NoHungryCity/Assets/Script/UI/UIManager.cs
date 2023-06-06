@@ -13,9 +13,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] private float timerToDelivery;
     private bool timerIsRunning = false;
     private float currentTime;
+    [SerializeField] private GameObject penaltyText;
+    [SerializeField] private float penaltyTime;
 
     public bool gameIsOver;
-    
+
 
     private void Awake()
     {
@@ -37,7 +39,7 @@ public class UIManager : MonoBehaviour
                 GameObject.Find("Canvas").GetComponent<GameOverBehavior>().GameOver();
             }
 
-            string minutes = ((int)currentTime/60).ToString("00") ;
+            string minutes = ((int)currentTime / 60).ToString("00");
             string seconds = (currentTime % 60).ToString("00");
             string timeText = minutes + ":" + seconds;
             timerText.text = timeText;
@@ -65,5 +67,19 @@ public class UIManager : MonoBehaviour
     {
         currentTime = timerToDelivery;
         timerText.text = timerToDelivery.ToString("0");
+    }
+
+    public void Penalty()
+    {
+        currentTime -= penaltyTime;
+
+        StartCoroutine(PenaltyText());
+    }
+
+    IEnumerator PenaltyText()
+    {
+        penaltyText.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        penaltyText.SetActive(false);
     }
 }

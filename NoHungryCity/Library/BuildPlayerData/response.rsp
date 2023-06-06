@@ -20,6 +20,7 @@
 -a="E:\Git\Projetos\GlobalSolution_Heinz\NoHungryCity\Library\PlayerScriptAssemblies\Unity.Services.Core.Threading.dll"
 -a="E:\Git\Projetos\GlobalSolution_Heinz\NoHungryCity\Library\PlayerScriptAssemblies\Unity.VisualScripting.State.dll"
 -a="E:\Git\Projetos\GlobalSolution_Heinz\NoHungryCity\Library\PlayerScriptAssemblies\Unity.Services.Core.Device.dll"
+-a="E:\Git\Projetos\GlobalSolution_Heinz\NoHungryCity\Library\PlayerScriptAssemblies\Unity.Postprocessing.Runtime.dll"
 -a="E:\Git\Projetos\GlobalSolution_Heinz\NoHungryCity\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll"
 -a="E:\Git\Projetos\GlobalSolution_Heinz\NoHungryCity\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll"
 -a="E:\Git\Projetos\GlobalSolution_Heinz\NoHungryCity\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll"

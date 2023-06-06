@@ -108,6 +108,7 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"E:/Git/Projetos/GlobalSolution_Heinz/NoHungryCity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
@@ -303,6 +304,7 @@
 -r:"E:/Unity/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.InputSystem.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.Environments.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.ref.dll"
@@ -323,6 +325,8 @@
 "Assets/Script/Enviroment/DeliveryPointController.cs"
 "Assets/Script/Enviroment/EventManager.cs"
 "Assets/Script/GameManager.cs"
+"Assets/Script/Obstacle/ObstacleController.cs"
+"Assets/Script/Obstacle/SpawnObstacleBehavior.cs"
 "Assets/Script/Player/BatteryBehavior.cs"
 "Assets/Script/Player/FoodBehavior.cs"
 "Assets/Script/Player/PlayerController.cs"
